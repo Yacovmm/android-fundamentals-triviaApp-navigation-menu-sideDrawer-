@@ -27,15 +27,15 @@ class TitleFragment : Fragment() {
                container, false)
 
         binding.playButton.setOnClickListener { view : View ->
-            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
+            view.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
         }
 
         binding.aboutButton.setOnClickListener { view : View ->
-            view.findNavController().navigate(R.id.action_titleFragment_to_aboutFragment)
+            view.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToAboutFragment())
         }
 
         binding.rulesButton.setOnClickListener { view : View ->
-            view.findNavController().navigate(R.id.action_titleFragment_to_rulesFragment)
+            view.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToRulesFragment())
         }
 
         setHasOptionsMenu(true)
